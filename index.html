@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ForeCasto</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 class="app-title">ForeCasto</h1>
+
+    <div class="search-box">
+      <input type="text" placeholder="Enter city name" class="input-box" />
+      <button id="searchBtn">
+        <img src="assets/search.png" alt="Search" class="search-icon" />
+      </button>
+    </div>
+
+    <!-- Location not found -->
+    <div class="location-not-found">
+      <h1>Sorry, Location not found!</h1>
+      <img src="assets/404.png" alt="404 Error" />
+    </div>
+
+    <!-- Weather Information -->
+    <div class="weather-body">
+      <img src="assets/clear.png" alt="Weather Icon" class="weather-icon" />
+      <h2 class="city-name">City, Country</h2>
+
+      <div class="weather-box">
+        <p class="temperature">0°C</p>
+        <p class="description">Description</p>
+      </div>
+
+      <div class="weather-details">
+        <div class="humidity">
+          <img src="assets/humidity.png" alt="Humidity" class="icon" />
+          <div class="text">
+            <span id="humidity">0%</span>
+            <p>Humidity</p>
+          </div>
+        </div>
+
+        <div class="wind">
+          <img src="assets/wind.png" alt="Wind" class="icon" />
+          <div class="text">
+            <span id="wind">0 Km/h</span>
+            <p>Wind Speed</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
